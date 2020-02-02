@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:orientation="horizontal">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:onClick="clicked"
+                    android:tag="topNews">
+
+
+                    <ProgressBar
+                        android:id="@+id/prTop_news"
+                        android:layout_width="match_parent"
+                        android:padding="50dp"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:id="@+id/Top_news"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Top news "
+                        android:textColor="@color/secondaryDarkColor"
+                        android:textSize="40sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+
+                        android:onClick="clicked"
+                        android:tag="business">
+
+                        <ProgressBar
+                            android:id="@+id/prbusiness"
+                            android:layout_width="match_parent"
+                            android:padding="25dp"
+                            android:layout_height="match_parent" />
+
+                        <ImageView
+                            android:id="@+id/business"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="business"
+                            android:textColor="@color/secondaryDarkColor"
+                            android:textSize="18sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:onClick="clicked"
+                        android:tag="enterainment">
+
+                        <ProgressBar
+                            android:id="@+id/prentertainment"
+                            android:layout_width="match_parent"
+                            android:padding="25dp"
+                            android:layout_height="match_parent" />
+                        <ImageView
+                            android:id="@+id/entertainment"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="entertainment"
+                            android:textColor="@color/secondaryDarkColor"
+                            android:textSize="18sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent" />
+                    </android.support.constraint.ConstraintLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
+
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    android:onClick="clicked"
+                    android:tag="health">
+                    <ProgressBar
+                        android:id="@+id/prhealth"
+                        android:layout_width="match_parent"
+                        android:padding="25dp"
+                        android:layout_height="match_parent" />
+                    <ImageView
+
+                        android:id="@+id/health"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="0dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="health"
+                        android:textColor="@color/secondaryDarkColor"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="clicked"
+                    android:tag="scince">
+
+                    <ProgressBar
+                        android:id="@+id/prscience"
+                        android:layout_width="match_parent"
+                        android:padding="25dp"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:id="@+id/science"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="0dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="science"
+                        android:textColor="@color/secondaryDarkColor"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:onClick="clicked"
+                    android:tag="technology">
+
+
+                    <ProgressBar
+                        android:id="@+id/prtechnology"
+                        android:layout_width="match_parent"
+                        android:padding="25dp"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:id="@+id/technology"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="0dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="technology"
+                        android:textColor="@color/secondaryDarkColor"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
+
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:onClick="clicked"
+                    android:tag="sport">
+
+                    <ProgressBar
+                        android:id="@+id/prSport"
+                        android:layout_width="match_parent"
+                        android:padding="25dp"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:id="@+id/Sport"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="0dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sport"
+                        android:textColor="@color/secondaryDarkColor"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:onClick="clicked"
+                    android:tag="general">
+
+                    <ProgressBar
+                        android:id="@+id/prGeneral"
+                        android:layout_width="match_parent"
+                        android:padding="25dp"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/General"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="0dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="General"
+                        android:textColor="@color/secondaryDarkColor"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:onClick="clicked"
+                    android:tag="search">
+
+
+
+                    <ImageView
+                        android:id="@+id/search_keyword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/search" />
+                </android.support.constraint.ConstraintLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    </android.support.v4.view.ViewPager>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </android.support.design.widget.TabLayout>
+
+</android.support.constraint.ConstraintLayout>
